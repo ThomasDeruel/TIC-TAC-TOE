@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+html{
+    background:#1c1c1c;
+    color:white;
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none;
+    user-select: none;
+}
+h1 {
+    text-align:center;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top:5vh;
+}
+#main{
+    width:80vh;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:80vh;
+    min-width:500px;
+    min-height:500px;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+tr{
+    text-align:center;
+    height:20vh;
+    background: rgba(0,0,0,.9);
+    transition:all 0.2s ease;
+}
+td{
+    font-size:10vh;
+    font-family: 'Ubuntu', sans-serif;
+    cursor:pointer;
+    color:white;
+    width:33%;
+    border:2px solid #1c1c1c;
+}
+tr td:hover{
+    background:#ff6100;
+}
+tr td.selected{
+    background:#1c1c1c;
+    cursor:default;
+    user-select: none; 
+}
