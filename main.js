@@ -40,7 +40,7 @@ userFunction = (row,col) => {
 };
 
 diagonalTRCheck = function() { // BEST
-  let reverse = [].concat(table).reverse();
+  const reverse = [].concat(table).reverse();
   return reverse.every((tr,i_row)=>{
     return (reverse[i_row][i_row] === reverse[0][0] && reverse[0][0] !== 0);
   });
